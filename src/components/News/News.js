@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Col } from 'react-bootstrap';
+import { Button } from '@mui/material';
 
 const News = (props) => {
 
@@ -13,7 +14,7 @@ const {title,urlToImage}=props.news;
           <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
-              
+              <Button variant='outlined'> More News</Button>
             </Card.Text>
           </Card.Body>
         </Card>
